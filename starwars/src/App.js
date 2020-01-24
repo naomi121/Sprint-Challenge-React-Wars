@@ -34,17 +34,15 @@ const App = () => {
   }, [])
 
 
-
-
-
-
-
-
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <FlexDiv>
+        {characters.map(character => <CharacterCard name = {character.name} birthyear = {character['birth_year']} />)}
+      </FlexDiv>
     </div>
   );
 }
+
 
 export default App;
